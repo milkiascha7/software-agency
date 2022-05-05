@@ -57,7 +57,11 @@ export const WorkRight: React.FC<{
   );
 };
 
-export const WorkLink: React.FC<LinkProps> = ({ href, children }) => (
+interface childProps extends LinkProps {
+  children: React.ReactNode;
+}
+
+export const WorkLink: React.FC<childProps> = ({ href, children }) => (
   <Link href={href}>
     <a
       target="_blank"

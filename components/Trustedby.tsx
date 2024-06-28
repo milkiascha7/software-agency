@@ -3,7 +3,7 @@
 import React, { useRef } from "react";
 import ClientLogos from "./Client-logos";
 import styles from "../styles/trusted.module.css";
-import { motion, useInView } from "framer-motion";
+import { delay, easeInOut, motion, useInView } from "framer-motion";
 
 export const opacity = {
   initial: {
@@ -11,11 +11,11 @@ export const opacity = {
   },
   open: {
     opacity: 1,
-    transition: { duration: 1.8, delay: 0.3 },
+    transition: { duration: 1.8, easeInOut },
   },
   closed: {
     opacity: 0,
-    transition: { duration: 1.8, delay: 0.3 },
+    transition: { duration: 1.8, easeInOut },
   },
 };
 
@@ -29,7 +29,7 @@ const Trustedby: React.FC = () => {
     >
       <div className="flex-1"></div>
       <div className="flex flex-col justify-center items-center">
-        <h3 className="text-xl mb-10 font-bold text-center">
+        <h3 className="text-xl mb-10 font-bold text-center flex flex-col">
           <span className="whitespace-nowrap">We work with</span>{" "}
           <span className="whitespace-nowrap">
             Some of the apps you use daily
@@ -42,7 +42,7 @@ const Trustedby: React.FC = () => {
           <motion.h3
             variants={opacity}
             animate={isInView ? "open" : "closed"}
-            className="text-3xl lg:text-4xl tracking-tight text-center px-10 !leading-[3.5rem]"
+            className="text-3xl lg:text-4xl opacity-0 tracking-tight text-center px-10 !leading-[3.5rem]"
           >
             We believe in good communication and a fully transparent development
             process

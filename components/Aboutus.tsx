@@ -21,15 +21,14 @@ export const slideUp = {
 export const opacity = {
   initial: {
     opacity: 0,
-    transition: { duration: 1, delay: 0.3, easeInOut },
   },
   open: {
     opacity: 1,
-    transition: { duration: 1, delay: 0.3, easeInOut },
+    transition: { duration: 1.2, easeInOut },
   },
   closed: {
     opacity: 0,
-    transition: { duration: 0.5, delay: 0.3, easeInOut },
+    transition: { duration: 1.2, easeInOut },
   },
 };
 
@@ -42,14 +41,19 @@ const Aboutus: React.FC = () => {
       className={`flex flex-col bg-white py-20 text-3xl md:text-4xl z-50`}
       ref={aboutRef}
     >
-      <div className="container mx-auto px-11">
+      <div className="container mx-auto px-11 flex flex-col">
         <motion.p
           variants={opacity}
           animate={isInView ? "open" : "closed"}
-          className="leading-tight max-w-5xl mx-auto text-4xl lg:text-4xl tracking-tight text-center transition-all ease-in-out"
+          className="leading-tight max-w-5xl mx-auto opacity-0 font-bold text-4xl lg:text-4xl tracking-tight text-center"
         >
-          <strong>We will help you ship better apps faster</strong>
-          <br />
+          will help you ship better apps faster
+        </motion.p>
+        <motion.p
+          variants={opacity}
+          animate={isInView ? "open" : "closed"}
+          className="leading-tight max-w-5xl mx-auto text-4xl lg:text-4xl tracking-tight text-center"
+        >
           Our team of expert engineers has created the best user experiences in
           some of the most popular apps worldwide.
         </motion.p>
@@ -103,7 +107,7 @@ const Aboutus: React.FC = () => {
             link="https://github.com/milkiascha7"
           />
           <Members
-            id="sam"
+            id="helen"
             name="Sam"
             socialId="@Sams965"
             link="https://github.com/milkiascha7"

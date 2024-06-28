@@ -62,13 +62,12 @@ interface childProps extends LinkProps {
 }
 
 export const WorkLink: React.FC<childProps> = ({ href, children }) => (
-  <Link href={href}>
-    <a
-      target="_blank"
-      rel="noreferrer"
-      className="underline underline-offset-8 decoration-1"
-    >
-      {children}
-    </a>
+  <Link
+    href={href}
+    target="_blank"
+    rel="noreferrer"
+    className="underline underline-offset-8 decoration-1"
+  >
+    {children}
   </Link>
 );

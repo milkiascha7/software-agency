@@ -5,120 +5,112 @@ import Image from "next/image";
 const ClientLogos: React.FC = () => {
   return (
     <SliderContainer className="" contentWidth={1290} initialOffsetX={0}>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/beats.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/netflix.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/nintendo.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/ps.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/samsung.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
-          alt="audobon"
-          objectFit="cover"
-        />
-      </SliderItem>
-      <SliderItem width={150}>
-        <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/google.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
       <div className=" m-3 "></div>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/apple.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/twitter.jpg"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={150}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/unifi.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={200}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/unitjs.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={200}>
+
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/hulu.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />
       </SliderItem>
-      <SliderItem width={200}>
+      <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/audubon.jpg"
-          width={150}
-          height={150}
+          src="/assets/trustedby/peacock.png"
+          width={140}
+          height={140}
           alt="audobon"
           objectFit="cover"
         />

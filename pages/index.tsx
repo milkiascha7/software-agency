@@ -15,7 +15,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Miki Website</title>
+        <title>Miki Design</title>
         <meta name="description" content="Software agency" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

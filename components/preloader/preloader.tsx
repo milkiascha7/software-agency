@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { opacity, expand } from "./anim";
 
 interface PreloaderProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   backgroundColor?: string;
 }
 

@@ -32,7 +32,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <AnimatePresence mode="wait">
-        {isLoading && <Preloader children={undefined} />}
+        {isLoading && <Preloader />}
       </AnimatePresence>
 
       <Masthead />

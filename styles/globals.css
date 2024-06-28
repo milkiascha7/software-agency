@@ -9,7 +9,7 @@
     line-height: 1.1;
     letter-spacing: 0em;
     background: black;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 a{
     color: inherit;
@@ -19,3 +19,9 @@ a{
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+  

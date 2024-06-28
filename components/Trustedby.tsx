@@ -1,16 +1,36 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import ClientLogos from "./Client-logos";
 import styles from "../styles/trusted.module.css";
+import { motion, useInView } from "framer-motion";
+
+export const opacity = {
+  initial: {
+    opacity: 0,
+  },
+  open: {
+    opacity: 1,
+    transition: { duration: 1.8, delay: 0.3 },
+  },
+  closed: {
+    opacity: 0,
+    transition: { duration: 1.8, delay: 0.3 },
+  },
+};
 
 const Trustedby: React.FC = () => {
+  const trustRef = useRef(null);
+  const isInView = useInView(trustRef);
   return (
     <section
-      className={`bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32 ${styles.bg}`}
+      ref={trustRef}
+      className={`bg-white min-h-screen flex flex-col justify-center gap-16 md:gap-32 z-50 ${styles.bg}`}
     >
       <div className="flex-1"></div>
       <div className="flex flex-col justify-center items-center">
         <h3 className="text-xl mb-10 font-bold text-center">
-          <span className="whitespace-nowrap">trusted by</span>{" "}
+          <span className="whitespace-nowrap">We work with</span>{" "}
           <span className="whitespace-nowrap">
             Some of the apps you use daily
           </span>
@@ -19,10 +39,14 @@ const Trustedby: React.FC = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <div className="container mx-auto lg:max-w-[70%] lg:px-10">
-          <h3 className="text-3xl lg:text-4xl tracking-tight text-center px-10 !leading-[3.5rem]">
+          <motion.h3
+            variants={opacity}
+            animate={isInView ? "open" : "closed"}
+            className="text-3xl lg:text-4xl tracking-tight text-center px-10 !leading-[3.5rem]"
+          >
             We believe in good communication and a fully transparent development
             process
-          </h3>
+          </motion.h3>
         </div>
       </div>
 

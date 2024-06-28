@@ -7,7 +7,7 @@ interface workProps {
 
 export const WorkContainer: React.FC<workProps> = ({ children }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen">
+    <div className="grid grid-cols-1 lg:grid-cols-2 w-full min-h-screen px-10">
       {children}
     </div>
   );
@@ -45,7 +45,7 @@ export const WorkRight: React.FC<{
   let translateY = Math.max(-50, -(progress - 0.5) * 50);
   return (
     <div
-      className="flex flex-1 lg:items-center justify-center h-screen"
+      className="flex flex-1 lg:items-center justify-center h-screen lg:m-auto"
       style={{
         transform: `translateY(${translateY})`,
       }}

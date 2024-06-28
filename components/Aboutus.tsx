@@ -1,15 +1,58 @@
-import React from "react";
+"use client";
+
+import React, { useRef } from "react";
 import Members from "./Members";
+import { easeIn, easeInOut, motion, useInView } from "framer-motion";
+
+export const slideUp = {
+  initial: {
+    y: "100%",
+  },
+  open: (i: number) => ({
+    y: "0%",
+    transition: { duration: 0.5, delay: 0.04 * i },
+  }),
+  closed: {
+    y: "100%",
+    transition: { duration: 0.7 },
+  },
+};
+
+export const opacity = {
+  initial: {
+    opacity: 0,
+    transition: { duration: 1, delay: 0.3, easeInOut },
+  },
+  open: {
+    opacity: 1,
+    transition: { duration: 1, delay: 0.3, easeInOut },
+  },
+  closed: {
+    opacity: 0,
+    transition: { duration: 0.5, delay: 0.3, easeInOut },
+  },
+};
 
 const Aboutus: React.FC = () => {
+  const aboutRef = useRef(null);
+  const isInView = useInView(aboutRef);
+
   return (
-    <section className={`flex flex-col bg-white py-20 text-3xl md:text-4xl`}>
+    <section
+      className={`flex flex-col bg-white py-20 text-3xl md:text-4xl z-50`}
+      ref={aboutRef}
+    >
       <div className="container mx-auto px-11">
-        <p className="leading-tight max-w-5xl mx-auto text-4xl lg:text-4xl tracking-tight">
-          <strong>We will help you ship better apps, faster</strong> Our team of
-          expert engineers has created the best user experiences in some of the
-          most popular apps worldwide.
-        </p>
+        <motion.p
+          variants={opacity}
+          animate={isInView ? "open" : "closed"}
+          className="leading-tight max-w-5xl mx-auto text-4xl lg:text-4xl tracking-tight text-center transition-all ease-in-out"
+        >
+          <strong>We will help you ship better apps faster</strong>
+          <br />
+          Our team of expert engineers has created the best user experiences in
+          some of the most popular apps worldwide.
+        </motion.p>
       </div>
       <div className="container mx-auto px-11 text-center mt-28">
         <h2> Our team</h2>

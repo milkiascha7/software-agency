@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
   }
 
   return (
-    <div ref={refContainer} className="bg-black text-white">
+    <div ref={refContainer} className="bg-black text-white z-50">
       <div
         className="min-h-screen max-w-5xl mx-auto 
         px-10 lg:px-20 py-24 md:py-28 lg:py-36 flex flex-col justify-center 

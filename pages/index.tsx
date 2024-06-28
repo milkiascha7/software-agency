@@ -12,6 +12,8 @@ import Testimonials from "../components/Testimonials";
 import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import { useEffect, useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Preloader from "../components/preloader/preloader";
 
 const Home: NextPage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,17 +31,15 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>MH Designs</title>
-        <meta name="description" content="Software agency" />
-        <link rel="icon" href="/MH.ico" />
-      </Head>
+      <AnimatePresence mode="wait">
+        {isLoading && <Preloader children={undefined} />}
+      </AnimatePresence>
 
       <Masthead />
-      <Aboutus />
-      <Skills />
-      <Works />
       <Trustedby />
+      <Aboutus />
+      <Works />
+      <Skills />
       <Testimonials />
       <ContactUs />
       <Footer />

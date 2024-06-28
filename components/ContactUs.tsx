@@ -3,12 +3,12 @@ import Image from "next/image";
 
 const ContactUs: React.FC = () => {
   return (
-    <div className="bg-black text-white flex flex-col justify-center items-center pt-10 min-h-screen">
+    <div className="bg-black text-white flex flex-col justify-center items-center pt-10 min-h-screen z-50">
       <div className="flex-1 flex flex-col justify-center items-center pt-10 lg:pt-6">
         <div className="pb-10">
           <Image
-            style={{ background: "white", borderRadius: "10" }}
-            src="/assets/vercel.svg"
+            style={{ borderRadius: "10" }}
+            src="/assets/MH.svg"
             width={100}
             height={60}
             alt="logo"

@@ -15,9 +15,10 @@ const Members: React.FC<Props> = ({ id, name, socialId, link }) => {
       <Image
         src={`/assets/team/margelo_faces_${id}.png`}
         alt={name}
-        width={1366}
-        height={1555}
+        width={136}
+        height={900}
         objectFit="contain"
+        className="mx-auto"
       />
       <div className="text-2xl xl:text-3xl">{name}</div>
       <div className="text-xl">

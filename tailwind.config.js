@@ -10,7 +10,10 @@ module.exports = {
     extend: {
       height: {
         'half-screen': '50vh'
-      }
+      },
+      animation: {
+        in: 'fadeIn .7s both',
+      },
     },
   },
   plugins: [],

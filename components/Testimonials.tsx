@@ -5,7 +5,7 @@ import Review from "./review";
 
 const Testimonials: React.FC = () => {
   return (
-    <Carousel className="bg-black flex text-white py-10 lg:py-20">
+    <Carousel className="bg-black flex text-white py-10 lg:py-20 z-50">
       <CarouselItem index={0}>
         <Review by="Axel (Showtime)">
           MH Designs and Showtime is passionate about creating products that

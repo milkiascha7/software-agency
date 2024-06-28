@@ -22,17 +22,17 @@ const Works = () => (
             <WorkLeft progress={progress}>
               <div>We built</div>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Pink Panda</WorkLink>
-                &apos;s app
+                <WorkLink href="https://pinkpanda.io/">NFT Market App</WorkLink>
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
               <Image
-                src="/assets/works/phone1.jpg"
+                src="/assets/works/nft_05.png"
                 layout="responsive"
-                objectFit="cover"
-                width={840}
-                height={1620}
+                objectPosition="center"
+                objectFit="contain"
+                width={400}
+                height={400}
                 alt="phone-01"
               />
             </WorkRight>
@@ -44,19 +44,19 @@ const Works = () => (
         renderContent={({ progress }) => (
           <WorkContainer>
             <WorkLeft progress={progress}>
-              <div>We made</div>
+              <div>We made Our Custom</div>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Steakwallet</WorkLink>
+                <WorkLink href="https://pinkpanda.io/">Book App</WorkLink>
                 &nbsp;faster.
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
               <Image
-                src="/assets/works/phone2.jpg"
+                src="/assets/works/book.png"
                 layout="responsive"
-                objectFit="cover"
-                width={840}
-                height={1620}
+                objectFit="contain"
+                width={400}
+                height={400}
                 alt="phone-02"
               />
             </WorkRight>
@@ -70,17 +70,19 @@ const Works = () => (
             <WorkLeft progress={progress}>
               <div>We helped</div>
               <div className="text-4xl md:text-5xl font-semibold tracking-tight">
-                <WorkLink href="https://pinkpanda.io/">Showtime</WorkLink> ship
-                faster.
+                <WorkLink href="https://pinkpanda.io/">
+                  Addis Furniture
+                </WorkLink>{" "}
+                ship faster.
               </div>
             </WorkLeft>
             <WorkRight progress={progress}>
               <Image
-                src="/assets/works/phone3.jpg"
+                src="/assets/works/furniture_02.png"
                 layout="responsive"
-                objectFit="cover"
-                width={840}
-                height={1620}
+                objectFit="contain"
+                width={400}
+                height={400}
                 alt="phone-03"
               />
             </WorkRight>

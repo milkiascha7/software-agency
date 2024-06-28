@@ -6,7 +6,7 @@ export const expand = {
     top: "100vh",
     transition: {
       duration: 0.5,
-      delay: 0.06 * i,
+      delay: 0.09 * i,
       ease: [0.515, 0.91, 0.655, 1],
     },
     transitionEnd: { height: "0", top: "0" },
@@ -15,7 +15,7 @@ export const expand = {
     height: "100vh",
     transition: {
       duration: 0.5,
-      delay: 0.06 * i,
+      delay: 0.09 * i,
       ease: [0.515, 0.91, 0.655, 1],
     },
   }),

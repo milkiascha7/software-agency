@@ -61,52 +61,52 @@ const Aboutus: React.FC = () => {
           <Members
             id="marc"
             name="Marc"
-            socialId="@mrousavy"
-            link="https://github.com/mrousavy"
+            socialId="@milkiascha7"
+            link="https://github.com/milkiascha7"
           />
           <Members
             id="allen"
             name="Allen"
             socialId="@Allenusail"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
           <Members
             id="helen"
             name="Helen"
             socialId="@HelenHs65"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
           <Members
             id="bob"
             name="Bob"
             socialId="@BobTHich"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
 
           <Members
             id="zeta"
             name="Zeta"
             socialId="@zeta465"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
 
           <Members
             id="ashely"
             name="Ashely"
             socialId="@asheleyDash"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
           <Members
             id="allen"
             name="Allen"
             socialId="@Allenusail"
-            link="https://github.com/mrousavy"
+            link="https://github.com/milkiascha7"
           />
           <Members
-            id="helen"
-            name="Helen"
-            socialId="@HelenHs65"
-            link="https://github.com/mrousavy"
+            id="sam"
+            name="Sam"
+            socialId="@Sams965"
+            link="https://github.com/milkiascha7"
           />
         </div>
       </div>

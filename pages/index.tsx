@@ -30,20 +30,26 @@ const Home: NextPage = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
-      <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence>
+    <>
+      <Head>
+        <title>MH Designs</title>
+        <link rel="icon" href="/MH.ico" />
+      </Head>
+      <div className={styles.container}>
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader />}
+        </AnimatePresence>
 
-      <Masthead />
-      <Trustedby />
-      <Aboutus />
-      <Works />
-      <Skills />
-      <Testimonials />
-      <ContactUs />
-      <Footer />
-    </div>
+        <Masthead />
+        <Trustedby />
+        <Aboutus />
+        <Works />
+        <Skills />
+        <Testimonials />
+        <ContactUs />
+        <Footer />
+      </div>
+    </>
   );
 };
 

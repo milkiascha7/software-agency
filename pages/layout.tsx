@@ -14,10 +14,6 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <Head>
-        <title>MH Designs</title>
-        <link rel="icon" href="/MH.ico" />
-      </Head>
       <body className={lato.className} suppressHydrationWarning={true}>
         {children}
       </body>

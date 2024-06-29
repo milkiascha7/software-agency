@@ -7,7 +7,7 @@ const ClientLogos: React.FC = () => {
     <SliderContainer className="" contentWidth={1290} initialOffsetX={0}>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/beats.png"
+          src="/assets/trustedBy/beats.png"
           width={140}
           height={140}
           alt="audobon"
@@ -16,7 +16,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/netflix.png"
+          src="/assets/trustedBy/netflix.png"
           width={140}
           height={140}
           alt="audobon"
@@ -25,7 +25,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/nintendo.png"
+          src="/assets/trustedBy/nintendo.png"
           width={140}
           height={140}
           alt="audobon"
@@ -34,7 +34,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/ps.png"
+          src="/assets/trustedBy/ps.png"
           width={140}
           height={140}
           alt="audobon"
@@ -43,7 +43,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/samsung.png"
+          src="/assets/trustedBy/samsung.png"
           width={140}
           height={140}
           alt="audobon"
@@ -52,7 +52,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/google.png"
+          src="/assets/trustedBy/google.png"
           width={140}
           height={140}
           alt="audobon"
@@ -62,7 +62,7 @@ const ClientLogos: React.FC = () => {
       <div className=" m-3 "></div>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/apple.png"
+          src="/assets/trustedBy/apple.png"
           width={140}
           height={140}
           alt="audobon"
@@ -71,7 +71,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/twitter.jpg"
+          src="/assets/trustedBy/twitter.jpg"
           width={140}
           height={140}
           alt="audobon"
@@ -80,7 +80,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/unifi.png"
+          src="/assets/trustedBy/unifi.png"
           width={140}
           height={140}
           alt="audobon"
@@ -89,7 +89,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/unitjs.png"
+          src="/assets/trustedBy/unitjs.png"
           width={140}
           height={140}
           alt="audobon"
@@ -99,7 +99,7 @@ const ClientLogos: React.FC = () => {
 
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/hulu.png"
+          src="/assets/trustedBy/hulu.png"
           width={140}
           height={140}
           alt="audobon"
@@ -108,7 +108,7 @@ const ClientLogos: React.FC = () => {
       </SliderItem>
       <SliderItem width={140}>
         <Image
-          src="/assets/trustedby/peacock.png"
+          src="/assets/trustedBy/peacock.png"
           width={140}
           height={140}
           alt="audobon"

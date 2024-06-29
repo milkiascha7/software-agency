@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import ClientLogos from "./Client-logos";
+import ClientLogos from "./ClientLogos";
 import styles from "../styles/trusted.module.css";
 import { delay, easeInOut, motion, useInView } from "framer-motion";
 
